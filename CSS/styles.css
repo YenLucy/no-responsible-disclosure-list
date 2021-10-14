@@ -1,0 +1,106 @@
+div, p, a {
+	font-family: Ubuntu;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Bebas Neue;
+}
+
+h1 {
+	color: cyan;
+}
+
+.projectWrapper {
+	max-width: 1600px;
+	min-width: 800px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.projectIntro h1 {
+	text-align: center;
+}
+
+.introtext {
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 20px;
+	text-align: center;
+	background-color: cyan;
+	width: 50%;
+	margin: 0 auto;
+	min-width:550px;
+}
+
+.contact {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 20px;
+	text-align: center;
+	background-color: cyan;
+	min-width:550px;
+}
+
+.contact a {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.element {
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: cyan;
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width:550px;
+}
+
+.name {
+	display: inline;
+	padding: 0 0 0 20px;
+}
+
+.timeframeyear {
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+.proof {
+	display: inline;
+	padding: 0 20px 0 0;
+}
+
+.table-insert {
+	text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: cyan;
+	min-width:550px;
+}
+
+body {
+	background: url("https://better-save-then-sorry.de/images/bg-image.jpg") center center fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+form h3 {
+	margin: 0;
+}
+
+.table-insert-submit {
+	margin: 20px 0;
+}
+
+.table-insert-year {
+	margin: 20px 0;
+}
