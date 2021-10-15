@@ -94,7 +94,7 @@
 			</div>
 
 			<div class="contact">
-				<h2>Verbesserungsvorschläge/Kontakt:</h2>
+				<h2>Änderungen an Einträgen/Verbesserungsvorschläge/Kontakt:</h2>
 				<a href="mailto:contact@better-save-then-sorry.de">contact@better-save-then-sorry.de</a>
 			</div>
 		</div>
