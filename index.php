@@ -39,7 +39,7 @@
 				<p class="introtext">
 					In einer Liste werden hier sämtliche Organisationen und Unternehmen aufgezählt, welche sich auf eindringliche Art weigern, am Responsible Disclosure-Verfahren teilzunehmen. Diese Unternehmen antworten den Sicherheitsforscher*innen, indem sie sie bei den Strafverfolgungsbehörden anzeigen - ganz im Sinne von "Shoot the messenger". Um dem entgegen zu wirken, wurde diese Liste ins Leben gerufen, welche lediglich die verschiedenen Unternehmen und die bekannten Vorfälle dieser Art zusammenträgt.
 					<br><br>
-					<a class="add-link" href="#add-entry" rel="nofollow">Eintrag hinzufügen</a>
+					<a class="add-link" href="#add-entry" rel="nofollow">Eintrag hinzufügen/Kontakt</a>
 				</p>
 			</div>
 
