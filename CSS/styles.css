@@ -6,10 +6,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Bebas Neue;
 }
 
-h1 {
-	color: cyan;
-}
-
 .projectWrapper {
 	max-width: 1600px;
 	min-width: 800px;
@@ -22,6 +18,12 @@ h1 {
 }
 
 .introtext {
+	text-align: center;
+	margin: 16px 20px;
+	margin-top: 0 !important;
+}
+
+.projectIntro {
 	border: 1px solid black;
 	padding: 5px;
 	border-radius: 20px;
@@ -29,7 +31,7 @@ h1 {
 	background-color: cyan;
 	width: 50%;
 	margin: 0 auto;
-	min-width:550px;
+	min-width: 550px;
 }
 
 .contact {
