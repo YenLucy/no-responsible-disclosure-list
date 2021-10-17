@@ -60,7 +60,7 @@
 			</div>
 			<div class="table-insert" id="add-entry">
 				<h2>Daten hinzufügen</h2>
-				<form>
+				<form method="post">
 					<div class="table-insert-name">
 						<h3>Name der Organisation/Firma:</h3>
 						<input type="text" name="organization">
@@ -77,14 +77,15 @@
 				</form>
 
 				<?php
-					if($_GET["organization"] != NULL && $_GET["year"] != NULL && $_GET["proof"] != NULL) {
-						$proof = htmlspecialchars($_GET['proof'], ENT_QUOTES);
-						$year = htmlspecialchars($_GET['year'], ENT_QUOTES);
-						$name = htmlspecialchars($_GET['organization'], ENT_QUOTES);
+					if($_POST["organization"] != NULL && $_POST["year"] != NULL && $_POST["proof"] != NULL) {
+						$proof = htmlspecialchars($_POST['proof'], ENT_QUOTES);
+						$year = htmlspecialchars($_POST['year'], ENT_QUOTES);
+						$name = htmlspecialchars($_POST['organization'], ENT_QUOTES);
 						$query = "INSERT INTO db71866.NoResponsibleDisclosure (Name,TimeframeYear,Link) VALUES ('".$name."',".$year.",'".$proof."')";
 						$check = mysqli_query($db,$query);
 						if($check) {
 							echo "success";
+							header("Refresh:0");
 						}
 						else { 
 							echo "Error. Please contact Webmaster via E-Mail.";
