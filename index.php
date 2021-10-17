@@ -49,11 +49,17 @@
 					$ergebnis = mysqli_fetch_all($ergebnis);
 					$count = 0;
 					while($ergebnis[$count] !== null) {
-						echo '<div class="element">';
-						echo '<div class="name">'.$ergebnis[$count][1].'</div>';
-						echo '<div class="timeframeyear">'.$ergebnis[$count][2].'</div>';
-						echo '<div class="proof"><a target="_blank" rel="nofollow" href="'.$ergebnis[$count][3].'">Newsartikel</a></div>';
-						echo '</div>';
+						$inputname = $ergebnis[$count][1];
+						$inputyear = $ergebnis[$count][2];
+						$inputurl = $ergebnis[$count][3];
+						$inputurlstring = parse_url($ergebnis[$count][3], PHP_URL_HOST);
+						if($inputurlstring != false) {
+							echo '<div class="element">';
+							echo '<div class="name">'.$inputname.'</div>';
+							echo '<div class="timeframeyear">'.$inputyear.'</div>';
+							echo '<div class="proof"><a target="_blank" rel="nofollow" href="'.$inputurl.'">Newsartikel ('.$inputurlstring.')</a></div>';
+							echo '</div>';
+						}
 						$count = $count + 1;
 					}
 				?>
@@ -84,8 +90,8 @@
 						$query = "INSERT INTO db71866.NoResponsibleDisclosure (Name,TimeframeYear,Link) VALUES ('".$name."',".$year.",'".$proof."')";
 						$check = mysqli_query($db,$query);
 						if($check) {
-							echo "success";
-							header("Refresh:0");
+							echo "<br>success<br>";
+							echo "<a href='https://better-save-then-sorry.de/'>Reload Page</a>";
 						}
 						else { 
 							echo "Error. Please contact Webmaster via E-Mail.";
