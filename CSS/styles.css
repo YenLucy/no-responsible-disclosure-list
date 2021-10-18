@@ -93,6 +93,7 @@ body {
 	background: url("https://better-save-then-sorry.de/images/bg-image.jpg") center center fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: inherit;
 }
 
 form h3 {
@@ -105,4 +106,50 @@ form h3 {
 
 .table-insert-year {
 	margin: 20px 0;
+}
+
+@media screen and (max-width: 575px) {
+	.projectWrapper {
+		padding-left: 	0px;
+		padding-right: 	0px;
+		min-width: 0;
+	}
+
+	.projectIntro {
+		width: 80%;
+		min-width: 	0;
+	}
+
+	.element {
+		width: 81%;
+		min-width: 	0;
+	}
+
+	.table-insert {
+		width: 80%;
+		min-width: 	0;
+	}
+
+	.contact {
+		width: 80%;
+		min-width: 	0;
+	}
+
+	.name {
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.timeframeyear {
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.proof {
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }

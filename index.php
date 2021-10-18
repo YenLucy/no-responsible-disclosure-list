@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<?php
-		$ProjectVersionNumber = 1.0;
+		$ProjectVersionNumber = 2.0;
 		include "MYSQL.php";
 
 		$db = mysqli_connect($MYSQL_HOSTIP,$MYSQL_USER,$MYSQL_PASS,$MYSQL_DATABASE);
@@ -25,6 +25,7 @@
 		<meta name="keywords" content="IT, Responsible, Disclosure, Security, Researcher, legal, organizations">
 		<meta name="Author" content="YenLucy">
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -101,7 +102,7 @@
 			</div>
 
 			<div class="contact">
-				<h2>Änderungen an Einträgen/Verbesserungsvorschläge/Kontakt:</h2>
+				<h2>Änderungen an Einträgen, Verbesserungsvorschläge und Kontakt:</h2>
 				<a href="mailto:contact@better-save-then-sorry.de">contact@better-save-then-sorry.de</a>
 			</div>
 		</div>
