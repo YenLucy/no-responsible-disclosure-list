@@ -89,11 +89,20 @@ h1, h2, h3, h4, h5, h6 {
 	min-width:550px;
 }
 
-body {
-	background: url("https://better-save-then-sorry.de/images/bg-image.jpg") center center fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: inherit;
+html::before {
+  content: ' ';
+  display: block;
+  background-image: url('https://better-save-then-sorry.de/images/bg-image.jpg') ; 
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -10;
 }
 
 form h3 {
@@ -113,6 +122,8 @@ form h3 {
 		padding-left: 	0px;
 		padding-right: 	0px;
 		min-width: 0;
+		margin-bottom: 35px;
+		margin-top: 35px;
 	}
 
 	.projectIntro {
